@@ -28,7 +28,7 @@ class UsersController extends \BaseController {
 	 */
 	public function login()
 	{
-		// $users = User::all();
+		
 
 		return View::make('login');
 	}
@@ -59,7 +59,7 @@ class UsersController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('add');
+		 return View::make('add');
 	}
 	/**
 	 * Show the form for creating a new resource.
@@ -70,7 +70,7 @@ class UsersController extends \BaseController {
 	{				
 		User::create(Input::all());
 		return Redirect::action('UsersController@index');
-		
+
 	}
 
 	/**
