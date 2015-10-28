@@ -29,7 +29,9 @@ class UsersController extends \BaseController {
 	public function login()
 	{
 		
+		$roles = Permission::find(2)->role;
 
+		dd($roles);
 		return View::make('login');
 	}
 
