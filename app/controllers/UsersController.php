@@ -29,9 +29,12 @@ class UsersController extends \BaseController {
 	public function login()
 	{
 		
-		$roles = Permission::find(2)->role;
+	//	 $photo = Photo::find(1);
 
-		dd($roles);
+	//	$imageable = $photo->imageable;
+		$staff = StaffAdmin::find(1);
+		
+		dd(array($staff->photos ));
 		return View::make('login');
 	}
 

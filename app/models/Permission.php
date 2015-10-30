@@ -15,5 +15,6 @@ class Permission extends Eloquent
         // return $this->belongsToMany('Role');
         return $this->belongsToMany('permission', 'group_role_permission', 'id', 'permissions_id');
     }
+     
 }
 
